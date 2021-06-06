@@ -18,7 +18,7 @@ window.onload = function () {
   document.addEventListener("visibilitychange", function (e) {
     if (!document.hidden) {
       document.title = pageTitle;
-      favicon.href = "./assets/images/dp_male.svg";
+      favicon.href = "./assets/images/dp_doge.jpg";
     }
   });
 
@@ -26,7 +26,7 @@ window.onload = function () {
     blinkEvent = setInterval(() => {
       if (document.title === attentionMessage) {
         document.title = pageTitle;
-        favicon.href = "./assets/images/dp_male.svg";
+        favicon.href = "./assets/images/dp_doge.jpg";
       } else {
         document.title = attentionMessage;
         favicon.href = "./assets/images/folded.png";
