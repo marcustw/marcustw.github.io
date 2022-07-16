@@ -1,0 +1,555 @@
+import { Meta } from '@storybook/addon-docs';
+import Code from './assets/introduction/code-brackets.svg';
+import Colors from './assets/introduction/colors.svg';
+import Comments from './assets/introduction/comments.svg';
+import Direction from './assets/introduction/direction.svg';
+import Flow from './assets/introduction/flow.svg';
+import Gmail from './assets/about/gmail.svg';
+import Plugin from './assets/introduction/plugin.svg';
+import Repo from './assets/introduction/repo.svg';
+import StackAlt from './assets/introduction/stackalt.svg';
+
+<Meta title="About Me" />
+
+<style>
+  {`
+    .bio {
+      font-family: 'Montserrat';
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .bio .name {
+      font-size: 20px;
+    }
+
+    .subheading, .skill-subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 16px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .subheading {
+      margin-top: 40px;
+    }
+
+    .skill-subheading {
+      margin-top: 12px;
+    }
+
+    .link-list {
+      display: grid;
+      row-gap: 10px;
+    }
+
+    @media (min-width: 620px) {
+      .link-list {
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media all and (-ms-high-contrast:none) {
+    .link-list {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr;
+      }
+    }
+
+    .link-item {
+      padding: 20px 30px 20px 15px;
+      border: 1px solid #00000010;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .link-item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .link-item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .link-item strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .link-item img {
+      height: 40px;
+      width: 40px;
+      margin-right: 15px;
+      flex: none;
+      overflow: visible;
+    }
+
+    .link-item span {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .skill-list {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .skill-item {
+      display: inline-block;
+      padding: 20px 15px 20px 15px;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      align-items: flex-start;
+    }
+
+    .skill-item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .skill-item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .skill-item img {
+      height: 52px;
+      width: 52px;
+      flex: none;
+      overflow: visible;
+    }
+
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #E7FDD8;
+      color: #66BF3C;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .tip-wrapper {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .tip-wrapper code {
+      font-size: 12px;
+      display: inline-block;
+    }
+  `}
+</style>
+
+# About Me
+
+<div className="bio">
+  <span>
+    Hellooooo I am{' '}
+    <span className="name"> <strong>Marcus Tan!</strong> </span>{' '} I am
+    currently a Senior Year <em>Computer Science undergraduate</em> from the
+    <b> National University of Singapore</b>. My resume is linked
+    <a
+      href="https://docs.google.com/document/d/14bKvyC2fMFP8p2um5Ioed3iu-PpSFdYG/edit?usp=sharing&ouid=100507967070655504589&rtpof=true&sd=true"
+    >
+      {' '} here
+    </a>
+    .
+    <br />
+    <br />
+    <i>
+      An aspiring{' '}
+      <b>
+        <em>Software Engineer</em>
+      </b>
+      , with a passion for <b>Trading </b> and <b>Fintech</b> industries,
+      exploring new technology, creating new innovations and driving digital
+      transformation.
+    </i>
+  </span>
+</div>
+<div className="subheading">Tech Stack</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://cplusplus.com/"
+    target="_blank"
+    title="C++"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+    />
+    <span>
+      <strong>C++</strong>
+      High Performance & Low Latency
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.python.org/"
+    target="_blank"
+    title="Python"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    />
+    <span>
+      <strong>Python</strong>
+      Machine Learning / Webscraping
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.javascript.com/"
+    target="_blank"
+    title="JavaScript"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    />
+    <span>
+      <strong>JavaScript</strong>
+      React / React Native / Express
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.typescriptlang.org/"
+    target="_blank"
+    title="TypeScript"
+  >
+    <img
+      alt="TypeScript"
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    />
+    <span>
+      <strong>TypeScript</strong>
+      Strongly typed JavaScript
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.oracle.com/sg/java/"
+    target="_blank"
+    title="Java"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    />
+    <span>
+      <strong>Java</strong>
+      Springboot
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.postgresql.org/"
+    target="_blank"
+    title="PostgreSQL"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    />
+    <span>
+      <strong>PostgreSQL</strong>
+      Database queries
+    </span>
+  </a>
+  {/* <a className="link-item" href="https://html.com/" target="_blank" title="HTML">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    />
+    <span>
+      <strong>HTML</strong>
+      Needs no introduction
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+    target="_blank"
+    title="CSS"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    />
+    <span>
+      <strong>CSS</strong>
+      Styling to make things cool
+    </span>
+  </a> */}
+</div>
+
+<div className="subheading">Frontend</div>
+<div className="skill-list">
+  <a
+    className="skill-item"
+    href="https://reactjs.org/"
+    target="_blank"
+    title="React/React Native"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      alt="react"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://flutter.dev/"
+    target="_blank"
+    title="Flutter2"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+      alt="flutter"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://www.android.com/"
+    target="_blank"
+    title="Android"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+      alt="android"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://nextjs.org/"
+    target="_blank"
+    title="Next.js"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+      alt="next.js"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://storybook.js.org/"
+    target="_blank"
+    title="Storybook.js"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg"
+      alt="storybook"
+    />
+  </a>
+</div>
+
+<div className="skill-subheading">Backend</div>
+<div className="skill-list">
+  <a
+    className="skill-item"
+    href="https://firebase.google.com/"
+    target="_blank"
+    title="Firebase"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+      alt="firebase"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://www.mongodb.com/"
+    target="_blank"
+    title="MongoDB"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+      alt="mongodb"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://expressjs.com/"
+    target="_blank"
+    title="Express"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+      alt="express"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://flask.palletsprojects.com/en/2.1.x/"
+    target="_blank"
+    title="Flask"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+      alt="flask"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://fastapi.tiangolo.com/"
+    target="_blank"
+    title="FastAPI"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+      alt="fastapi"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://spring.io/projects/spring-boot"
+    target="_blank"
+    title="Springboot"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+      alt="springboot"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://graphql.org/"
+    target="_blank"
+    title="GraphQL"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+      alt="graphql"
+    />
+  </a>
+</div>
+
+<div className="skill-subheading">Cloud</div>
+<div className="skill-list">
+  <a
+    className="skill-item"
+    href="https://aws.amazon.com/"
+    target="_blank"
+    title="Amazon Web Services"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+      alt="aws"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://cloud.google.com/"
+    target="_blank"
+    title="Google Cloud Platform"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+      alt="gcp"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://www.docker.com/"
+    target="_blank"
+    title="Docker"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+      alt="docker"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://kubernetes.io/"
+    target="_blank"
+    title="Kubernetes"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+      alt="kubernetes"
+    />
+  </a>
+  <a
+    className="skill-item"
+    href="https://www.terraform.io/"
+    target="_blank"
+    title="Terraform"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
+      alt="terraform"
+    />
+  </a>
+</div>
+
+<div className="subheading">Get In Touch</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="mailto:marcustanwei1@gmail.com"
+    target="_blank"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+      alt="gmail"
+    />
+    <span>
+      <strong>Email</strong>
+      Send me an email <u>marcustanwei1@gmail.com</u>
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.linkedin.com/in/marcustw"
+    target="_blank"
+  >
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+      alt="linkedin"
+    />
+    <span>
+      <strong>LinkedIn</strong>
+      Connect with me
+    </span>
+  </a>
+  <a className="link-item" href="https://github.com/marcustw" target="_blank">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      alt="github"
+    />
+    <span>
+      <strong>GitHub</strong>
+      Check out my repositories <u>marcustw</u>
+    </span>
+  </a>
+  <a className="link-item" href="https://t.me/callmeplanb" target="_blank">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+      alt="telegram"
+    />
+    <span>
+      <strong>Telegram</strong>
+      For urgent replies
+    </span>
+  </a>
+</div>

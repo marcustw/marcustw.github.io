@@ -1,14 +1,14 @@
 import { Meta } from '@storybook/addon-docs';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import Code from './assets/introduction/code-brackets.svg';
+import Colors from './assets/introduction/colors.svg';
+import Comments from './assets/introduction/comments.svg';
+import Direction from './assets/introduction/direction.svg';
+import Flow from './assets/introduction/flow.svg';
+import Plugin from './assets/introduction/plugin.svg';
+import Repo from './assets/introduction/repo.svg';
+import StackAlt from './assets/introduction/stackalt.svg';
 
-<Meta title="Example/Introduction" />
+<Meta title="Introduction to Storybook" />
 
 <style>
   {`
@@ -111,6 +111,12 @@ import StackAlt from './assets/stackalt.svg';
       font-size: 12px;
       display: inline-block;
     }
+
+    .credit-wrapper {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 12px;
+    }
   `}
 </style>
 
@@ -208,4 +214,9 @@ We recommend building UIs with a [**component-driven**](https://componentdriven.
 <div className="tip-wrapper">
   <span className="tip">Tip</span>Edit the Markdown in{' '}
   <code>stories/Introduction.stories.mdx</code>
+</div>
+
+<div className="subheading">Credits</div>
+<div className="credit-wrapper">
+  <span className="tip">💡</span>This is a default Introduction of Storybook. Credits: <a href="https://storybook.js.org/">Storybook.js</a>
 </div>
