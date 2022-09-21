@@ -13,6 +13,11 @@ import StackAlt from './assets/introduction/stackalt.svg';
 
 <style>
   {`
+    .responsive-pic {
+      width: 100%;
+      height: auto;
+    }
+
     .bio {
       font-family: 'Montserrat';
       font-size: 18px;
@@ -164,18 +169,29 @@ import StackAlt from './assets/introduction/stackalt.svg';
   `}
 </style>
 
+<div className="pic" style={{ marginBottom: 20, display: "flex", justifyContent: "center" }}>
+  <img
+    style={{width: 280, height: 280, borderRadius: 140, position: ""}}
+    src="https://media-exp1.licdn.com/dms/image/C5603AQEL20MOZ1lq4g/profile-displayphoto-shrink_800_800/0/1637321138935?e=1669248000&v=beta&t=B-TBpvS3fSusb5aD3Z7jNN_OLfdTNeARZ0BwmIx2B0Q" 
+  />
+</div>
+
 # About Me
+
 
 <div className="bio">
   <span>
     Hellooooo I am{' '}
-    <span className="name"> <strong>Marcus Tan!</strong> </span>{' '} I am
-    currently a Senior Year <em>Computer Science undergraduate</em> from the
+    <span className="responsive-pic">
+      {' '}
+      <strong>Marcus Tan!</strong>{' '}
+    </span>{' '}
+    I am currently a Senior Year <em>Computer Science undergraduate</em> from
+    the
     <b> National University of Singapore</b>. My resume is linked
-    <a
-      href="https://docs.google.com/document/d/14bKvyC2fMFP8p2um5Ioed3iu-PpSFdYG/edit?usp=sharing&ouid=100507967070655504589&rtpof=true&sd=true"
-    >
-      {' '} here
+    <a href="https://docs.google.com/document/d/14bKvyC2fMFP8p2um5Ioed3iu-PpSFdYG/edit?usp=sharing&ouid=100507967070655504589&rtpof=true&sd=true">
+      {' '}
+      here
     </a>
     .
     <br />
@@ -185,9 +201,8 @@ import StackAlt from './assets/introduction/stackalt.svg';
       <b>
         <em>Software Engineer</em>
       </b>
-      , with a passion for <b>Trading </b> and <b>Fintech</b> industries,
-      exploring new technology, creating new innovations and driving digital
-      transformation.
+      , with a passion for <b>Trading </b> and <b>Fintech</b> industries, exploring
+      new technology, creating new innovations and driving digital transformation.
     </i>
   </span>
 </div>
@@ -199,9 +214,7 @@ import StackAlt from './assets/introduction/stackalt.svg';
     target="_blank"
     title="C++"
   >
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-    />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
     <span>
       <strong>C++</strong>
       High Performance & Low Latency
@@ -213,9 +226,7 @@ import StackAlt from './assets/introduction/stackalt.svg';
     target="_blank"
     title="Python"
   >
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-    />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
     <span>
       <strong>Python</strong>
       Machine Learning / Webscraping
@@ -227,9 +238,7 @@ import StackAlt from './assets/introduction/stackalt.svg';
     target="_blank"
     title="JavaScript"
   >
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-    />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
     <span>
       <strong>JavaScript</strong>
       React / React Native / Express
@@ -256,9 +265,7 @@ import StackAlt from './assets/introduction/stackalt.svg';
     target="_blank"
     title="Java"
   >
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-    />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
     <span>
       <strong>Java</strong>
       Springboot
@@ -270,9 +277,7 @@ import StackAlt from './assets/introduction/stackalt.svg';
     target="_blank"
     title="PostgreSQL"
   >
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-    />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
     <span>
       <strong>PostgreSQL</strong>
       Database queries
@@ -302,7 +307,6 @@ import StackAlt from './assets/introduction/stackalt.svg';
     </span>
   </a> */}
 </div>
-
 <div className="subheading">Frontend</div>
 <div className="skill-list">
   <a
@@ -361,7 +365,6 @@ import StackAlt from './assets/introduction/stackalt.svg';
     />
   </a>
 </div>
-
 <div className="skill-subheading">Backend</div>
 <div className="skill-list">
   <a
@@ -442,7 +445,6 @@ import StackAlt from './assets/introduction/stackalt.svg';
     />
   </a>
 </div>
-
 <div className="skill-subheading">Cloud</div>
 <div className="skill-list">
   <a
@@ -501,7 +503,6 @@ import StackAlt from './assets/introduction/stackalt.svg';
     />
   </a>
 </div>
-
 <div className="subheading">Get In Touch</div>
 <div className="link-list">
   <a
@@ -552,4 +553,10 @@ import StackAlt from './assets/introduction/stackalt.svg';
       For urgent replies
     </span>
   </a>
+</div>
+<div className="edit">
+  <span>
+    Work in progress, so sorry for the bad styling, did not have time to design
+    it well. Will touch up soon 😅! Thank you for reading 😇.
+  </span>
 </div>
