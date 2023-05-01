@@ -1,0 +1,16 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Projects/Pic Price Pls" />
+
+# Pic Price Pls
+## Web app that predicts an uploaded NFT price based on OpenSea market
+
+<br />
+
+#### Tech Stack: Python, PySpark, Azure, React, PyTorch
+
+- Developed a web app using Flask and integrated API call to a pickled pre-trained model to predict NFT prices
+- Created a web scraper to collect 200+ OpenSea NFT slug sales data and maintained ETL data pipeline to Azure data lake
+- Integrated a pre-trained Convolutional Neural Network (CNN) model ResNet50V2 to extract NFT image features
+- Trained Support Vector Regression (SVR) model with extract image features and their corresponding prices and labels on cloud
+- [https://github.com/marcustw/cs4225-nft-price-estimator](https://github.com/marcustw/cs4225-nft-price-estimator)
